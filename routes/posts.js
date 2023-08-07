@@ -1,6 +1,5 @@
 const express = require('express');
 const {
-    // getData,
     createClient,
     getServices,
     postServices,
