@@ -5,24 +5,6 @@ const part = require('../models/postParts.js');
 
 // Clients
 
-// async function getData(request, response) {
-//     const { status } = request.query;
-//     try {
-//         if (status === 'false') {
-//             const clients = await client.find({ status: false });
-//             return response.status(200).json(clients);
-//         } else if (status === 'true') {
-//             const clients = await client.find({ status: true });
-//             return response.status(200).send(clients);
-//         } else {
-//         const clients = await client.find();
-//         return response.status(200).send(clients);
-//         }
-//     } catch (error) {
-//         response.status(500).json({ message: error.message });
-//     }
-// }
-
 async function getClientsTrue(request, response) {
     try {
         const clients = await client.find({ status: false });
